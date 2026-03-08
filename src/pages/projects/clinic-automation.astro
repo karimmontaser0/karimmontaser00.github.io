@@ -1,0 +1,76 @@
+---
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { siteConfig } from "../../config";
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Clinic Appointment Automation" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clinic Automation - {siteConfig.name}</title>
+  </head>
+  <body>
+    <Header />
+    <main style="max-width: 900px; margin: 0 auto; padding: 6rem 1.5rem;">
+
+      <a href="/" style="color: var(--accent); text-decoration: none; display: inline-block; margin-bottom: 2rem;">← Back to Portfolio</a>
+
+      <h1 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem;">Clinic Appointment Automation</h1>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem;">
+        {["n8n", "Google Sheets API", "WhatsApp Business API", "REST APIs"].map(skill => (
+          <span style="padding: 0.3rem 0.8rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; font-size: 0.8rem;">{skill}</span>
+        ))}
+      </div>
+
+      <!-- Photo -->
+      <img
+        src="/projects/n8n-workflow.jpeg"
+        alt="n8n Workflow Diagram"
+        style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);"
+      />
+
+      <!-- Video -->
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Demo</h2>
+      <video controls style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);">
+        <source src="/projects/Clinic-Bot.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Description -->
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">About the Project</h2>
+      <p style="line-height: 1.8; margin-bottom: 2rem;">
+        End-to-end automation system that syncs WhatsApp patient inquiries with Google Sheets and Gmail
+        using n8n multi-agent orchestration. Designed to streamline clinic appointment scheduling with
+        near-zero manual intervention, reducing workload by 80%.
+      </p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Tech Stack</h2>
+      <ul style="line-height: 2; padding-left: 1.5rem; margin-bottom: 2rem;">
+        <li>n8n for multi-agent workflow orchestration</li>
+        <li>WhatsApp Business API for patient message handling</li>
+        <li>Google Sheets API for real-time appointment tracking</li>
+        <li>Gmail API for automated confirmation emails</li>
+        <li>REST APIs for cross-platform integration</li>
+      </ul>
+
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Results</h2>
+      <ul style="line-height: 2; padding-left: 1.5rem;">
+        <li>80% reduction in manual scheduling workload</li>
+        <li>Near-zero manual intervention in the booking process</li>
+        <li>Real-time sync between WhatsApp, Google Sheets, and Gmail</li>
+      </ul>
+
+    </main>
+    <Footer />
+  </body>
+</html>
