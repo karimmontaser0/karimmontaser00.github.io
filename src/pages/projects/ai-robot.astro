@@ -8,58 +8,35 @@ import "../../styles/global.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/karimmontaser00.github.io/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="AI-Powered Humanoid Receptionist Robot" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <title>AI Robot - {siteConfig.name}</title>
   </head>
   <body>
     <Header />
     <main style="max-width: 900px; margin: 0 auto; padding: 6rem 1.5rem;">
-
-      <a href="/" style="color: var(--accent); text-decoration: none; display: inline-block; margin-bottom: 2rem;">← Back to Portfolio</a>
-
+      <a href="/karimmontaser00.github.io/" style="color: var(--accent); text-decoration: none; display: inline-block; margin-bottom: 2rem;">← Back to Portfolio</a>
       <h1 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem;">AI-Powered Humanoid Receptionist Robot</h1>
-
       <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem;">
         {["YOLOv8", "OpenCV", "Gemini API", "ElevenLabs", "Raspberry Pi", "Arduino"].map(skill => (
           <span style="padding: 0.3rem 0.8rem; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; font-size: 0.8rem;">{skill}</span>
         ))}
       </div>
-
-      <!-- Photo -->
-      <img
-        src="/projects/AI-Receptionist-Robot.png"
-        alt="AI Receptionist Robot"
-        style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);"
-      />
-
-      <!-- English Video -->
+      <img src="/karimmontaser00.github.io/projects/AI-Receptionist-Robot.png" alt="AI Receptionist Robot" style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);" />
       <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Demo — English</h2>
       <video controls style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);">
-        <source src="/projects/AI-Robot-En.mp4" type="video/mp4" />
+        <source src="/karimmontaser00.github.io/projects/AI-Robot-En.mp4" type="video/mp4" />
       </video>
-
-      <!-- Arabic Video -->
       <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Demo — Arabic</h2>
       <video controls style="width: 100%; border-radius: 12px; margin-bottom: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.4);">
-        <source src="/projects/AI-Robot-Arabic.mp4" type="video/mp4" />
+        <source src="/karimmontaser00.github.io/projects/AI-Robot-Arabic.mp4" type="video/mp4" />
       </video>
-
-      <!-- Description -->
       <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">About the Project</h2>
-      <p style="line-height: 1.8; margin-bottom: 2rem;">
-        Designed and built an AI-driven humanoid receptionist with real-time human–robot interaction.
-        Implemented face detection and tracking using YOLOv8 and OpenCV, achieving 95% detection accuracy.
-        Integrated Google Cloud STT, Gemini API, and ElevenLabs for bilingual Arabic/English voice interaction.
-      </p>
-
+      <p style="line-height: 1.8; margin-bottom: 2rem;">Designed and built an AI-driven humanoid receptionist with real-time human–robot interaction. Implemented face detection and tracking using YOLOv8 and OpenCV, achieving 95% detection accuracy. Integrated Google Cloud STT, Gemini API, and ElevenLabs for bilingual Arabic/English voice interaction.</p>
       <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Tech Stack</h2>
       <ul style="line-height: 2; padding-left: 1.5rem; margin-bottom: 2rem;">
         <li>YOLOv8 + OpenCV for real-time face tracking and head rotation</li>
@@ -67,14 +44,12 @@ import "../../styles/global.css";
         <li>ElevenLabs for natural Arabic/English voice synthesis</li>
         <li>Raspberry Pi 5 + Arduino Uno for hardware control</li>
       </ul>
-
       <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">Results</h2>
       <ul style="line-height: 2; padding-left: 1.5rem;">
         <li>95% face detection accuracy</li>
         <li>Stable 30-minute live demos with bilingual interaction</li>
         <li>Fast motor response for coordinated head movement</li>
       </ul>
-
     </main>
     <Footer />
   </body>
