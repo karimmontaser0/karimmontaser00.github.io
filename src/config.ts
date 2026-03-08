@@ -16,21 +16,21 @@ export const siteConfig = {
       name: "AI-Powered Humanoid Receptionist Robot",
       description:
         "Designed and built an AI-driven humanoid receptionist with real-time face tracking using YOLOv8 and OpenCV. Integrated Google Cloud STT, Gemini API, and ElevenLabs for bilingual Arabic/English interaction. Achieved 95% face detection accuracy.",
-      link: "/projects/ai-robot",
+      link: "/karimmontaser00.github.io/projects/ai-robot",
       skills: ["YOLOv8", "OpenCV", "Gemini API", "ElevenLabs", "Raspberry Pi", "Arduino"],
     },
     {
       name: "Clinic Appointment Automation",
       description:
         "End-to-end automation syncing WhatsApp inquiries with Google Sheets and Gmail using n8n multi-agent orchestration. Reduced manual scheduling workload by 80% with near-zero manual intervention.",
-      link: "/projects/clinic-automation",
+      link: "/karimmontaser00.github.io/projects/clinic-automation",
       skills: ["n8n", "Google Sheets API", "WhatsApp Business API", "REST APIs"],
     },
     {
       name: "JD-Match: AI Mock Interviewer",
       description:
         "A GenAI tool that analyzes a candidate's CV against a Job Description and conducts a tailored mock interview via a custom n8n workflow using prompt engineering to generate role-specific questions.",
-      link: "#",
+      link: "/karimmontaser00.github.io/projects/jd-match",
       skills: ["GenAI", "Prompt Engineering", "n8n", "Python"],
     },
   ],
